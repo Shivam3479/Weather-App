@@ -5,6 +5,7 @@ const WeatherApi = () => {
     const [pawan, setPawan] = useState();
     const [country, setCountry] = useState();
     const [search, setSearchQuery] = useState("delhi");
+    // Toggle button in Dark theme
     const [theme, setTheme] = useState("light-theme");
     const [toggleName, setToggleName] = useState("Dark Mode");
     const ToggleBtn = ()=>{
@@ -36,6 +37,7 @@ const WeatherApi = () => {
         fetchApi();
     }, [search])
     return (<>
+    {/* Ui Design Box */}
         <section className="weather-box light-theme w-100">
             <div className="container position-relative">
                 <div className="toggle-btn text-end pt-3">
